@@ -29,15 +29,16 @@ html {
 
   nav {
     width: 100%;
+    height: auto;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
   }
 
   nav li {
     display: inline;
     padding: 8px;
+    vertical-align: middle;
   }
