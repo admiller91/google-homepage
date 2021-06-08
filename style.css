@@ -45,3 +45,115 @@ body {
     padding: 8px;
     vertical-align: middle;
   }
+
+  /* HERO - GOOGLE IMAGE */
+
+#hero {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+
+
+/* SEARCH BAR AND BUTTONS */
+
+
+#search {
+  display: flex;
+  justify-content: center;
+}
+
+#search > input {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid lightgray;
+  width: 45vw;
+  min-width: 350px;
+  margin-bottom: 20px;
+}
+
+#search > input:hover {
+  box-shadow: 1px 1px 10px lightgray;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#buttons > input {
+  border: none;
+  background-color: #f8f9fa;
+  margin: 10px;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+#buttons > input:hover {
+  border: 1px solid #b6b8bb;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px;
+  background-color: #f8f9fa;
+  width: 100vw;
+  font-size: 14px;
+}
+
+footer > div > a {
+  color: #70757a;
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer > div > a:hover {
+  text-decoration: underline;
+}
+
+.leaf {
+  margin: 0;
+  padding: 0;
+  color: rgb(92, 197, 92);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+ footer {
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+ }
+
+ footer > div {
+   margin: 5px;
+ }
+
+ #footer-center {
+   order: -1;
+   flex-grow: 1;
+   width: 100vw;
+   text-align: center;
+ }
+}
+
+/* 
+
+Footer responsiveness:
+  change direction to column
+  change the order so the middle text is 1st
+  center the text 
+  
+  */
